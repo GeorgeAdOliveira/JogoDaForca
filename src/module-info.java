@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author georg
- *
- */
-module JogoDaForca {
-}
