@@ -1,0 +1,24 @@
+<DAO.BancoDeDados>
+	<palavras>
+		<Model.PalavraModel>
+			<nome>ABACAXI</nome>
+			<Categoria>FRUTA</Categoria>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<nome>ABACAXI</nome>
+			<Categoria>FRUTA</Categoria>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<nome>ELEFANTE</nome>
+			<Categoria>ANIMAL</Categoria>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<nome>PEIXE</nome>
+			<Categoria>ANIMAL</Categoria>
+			<central />
+		</Model.PalavraModel>
+	</palavras>
+</DAO.BancoDeDados>
