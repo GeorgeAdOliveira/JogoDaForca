@@ -7,8 +7,8 @@ public class PalavraController {
 	
 	private PalavraModel palavra = new PalavraModel(); 
 	
-	public PalavraDTO recuperarPalavras(PalavraDTO dto) {
-		return palavra.recuperarPalavras(dto);
+	public PalavraDTO recuperarPalavra(PalavraDTO dto) {
+		return palavra.recuperarPalavra(dto);
 	}
 	
 	public PalavraDTO adicionarPalavra(PalavraDTO dto) {

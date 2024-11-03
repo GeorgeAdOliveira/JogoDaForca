@@ -7,6 +7,7 @@ import Model.PalavraModel;
 public class PalavraDTO {
 	
 	private PalavraModel palavra;
+	private String categoria;
 	
 	private ArrayList<PalavraModel> palavras;
 
@@ -24,6 +25,14 @@ public class PalavraDTO {
 
 	public void setPalavra(PalavraModel palavra) {
 		this.palavra = palavra;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 
 }
