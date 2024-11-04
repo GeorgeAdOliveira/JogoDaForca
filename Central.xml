@@ -132,5 +132,11 @@
       <dica></dica>
       <central/>
     </Model.PalavraModel>
+    <Model.PalavraModel>
+      <categoria>PAÍS</categoria>
+      <nome>BRASIL</nome>
+      <dica></dica>
+      <central/>
+    </Model.PalavraModel>
   </palavras>
 </DAO.BancoDeDados>
