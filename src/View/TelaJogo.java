@@ -2,13 +2,14 @@ package View;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Comparator;
-import java.util.Iterator;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 import Controller.PalavraController;
 import DTO.PalavraDTO;
@@ -21,6 +22,7 @@ public class TelaJogo extends TelaPadrao {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private String letrasAdicionadas = "";
 	private String palavraOculta;
 	private String palavraJogo;
 	private String categotia;
@@ -34,21 +36,68 @@ public class TelaJogo extends TelaPadrao {
 	private JLabel lbLetrasErradas;
 	private JLabel lbPalavra;
 	private JLabel lbTentativas;
+	private JLabel lbPontuacao;
+	private int pontuacao;
 	private int tentativas = 6;
+	private ImageIcon imagem1;// = new ImageIcon();
+	private JLabel icone1;
 
-	public TelaJogo(String categoria) {
-		super("Jogo");
+	public TelaJogo(String categoria, int pontuacao) {
+		super("Jogo da Forca");
 		this.categotia = categoria;
+		this.pontuacao = pontuacao;
 		gerarPalavra();
 		adicionarTitulo();
 		criarPalavraOcultaJogo();
 		adicionarTracejado();
 		adicionarBotoes();
 		adicionarInformacao();
+		adicionarIcones();
 		setVisible(true);
 	}
 
+	public void adicionarIcones() {
+
+		if (imagem1 != null) {
+			getContentPane().remove(icone1);
+			// imagem1 = new ImageIcon();
+			repaint();
+		}
+		icone1 = new JLabel("");
+		icone1.setBounds(800, 250, 200, 200);
+		switch (tentativas) {
+		case 6:
+			imagem1 = new ImageIcon("icones/7.png");
+			break;
+		case 5:
+			imagem1 = new ImageIcon("icones/6.png");
+			break;
+		case 4:
+			imagem1 = new ImageIcon("icones/5.png");
+			break;
+		case 3:
+			imagem1 = new ImageIcon("icones/4.png");
+			break;
+		case 2:
+			imagem1 = new ImageIcon("icones/3.png");
+			break;
+		case 1:
+			imagem1 = new ImageIcon("icones/2.png");
+			break;
+		case 0:
+			imagem1 = new ImageIcon("icones/1.png");
+			break;
+
+		}
+
+		Image img1 = imagem1.getImage().getScaledInstance(icone1.getWidth(), icone1.getHeight(), Image.SCALE_SMOOTH);
+		icone1.setIcon(new ImageIcon(img1));
+		getContentPane().add(icone1);
+
+	}
+
 	public void adicionarInformacao() {
+
 		JLabel lbText = new JLabel("Tentativas");
 		lbText.setBounds(30, 20, 170, 40);
 		lbText.setFont(new Font("Georgia", Font.BOLD | Font.ITALIC, 30));
@@ -66,7 +115,13 @@ public class TelaJogo extends TelaPadrao {
 		lbPontos.setFont(new Font("Georgia", Font.BOLD | Font.ITALIC, 30));
 		lbPontos.setHorizontalAlignment(JLabel.CENTER);
 		add(lbPontos);
-		
+
+		lbPontuacao = new JLabel(pontuacao + "");
+		lbPontuacao.setBounds(840, 55, 170, 40);
+		lbPontuacao.setFont(new Font("Georgia", Font.BOLD | Font.BOLD, 30));
+		lbPontuacao.setHorizontalAlignment(JLabel.CENTER);
+		add(lbPontuacao);
+
 		lbLetrasCertas = new JLabel(letrasCertas);
 		lbLetrasCertas.setText("0 -");
 		lbLetrasCertas.setBounds(300, 510, 400, 30);
@@ -74,7 +129,7 @@ public class TelaJogo extends TelaPadrao {
 		lbLetrasCertas.setHorizontalAlignment(JLabel.LEFT);
 		lbLetrasCertas.setForeground(new Color(0, 200, 0));
 		add(lbLetrasCertas);
-		
+
 		lbLetrasErradas = new JLabel(letrasErradas);
 		lbLetrasErradas.setText("0 -");
 		lbLetrasErradas.setBounds(300, 550, 400, 30);
@@ -90,20 +145,48 @@ public class TelaJogo extends TelaPadrao {
 		String p1 = "";
 		String pa = palavraJogo;
 		int cont = 0;
-		for (int i = 0; i < p.length(); i++) {
-			if (a == pa.charAt(i)) {
-				p1 += letra;
-				cont++;
-			} else {
-				p1 += p.charAt(i);
+		if (letrasAdicionadas.contains(letra)) {
+			JOptionPane.showMessageDialog(null, "Voçê ja Digitou essa letra!");
+		} else {
+			letrasAdicionadas += letra;
+			for (int i = 0; i < p.length(); i++) {
+				if (a == pa.charAt(i)) {
+					p1 += letra;
+
+					cont++;
+				} else {
+					p1 += p.charAt(i);
+				}
 			}
+			letrasAcertosErros(cont, letra);
+
+			palavraOculta = p1;
+			lbPalavra.setText(palavraOculta);
+			adicionarIcones();
+			repaint();
+			verificadorDeVitoriaPerca();
 		}
 
-		letrasAcertosErros(cont, letra);
+	}
 
-		palavraOculta = p1;
-		lbPalavra.setText(palavraOculta);
-		repaint();
+	public void verificadorDeVitoriaPerca() {
+		if (tentativas == 0) {
+			JOptionPane.showMessageDialog(null, "Você Perdeu!");
+			int cond = JOptionPane.showConfirmDialog(null, "Deseja continuar?", "Jogo da Forca", 0, 0);
+			if (cond == JOptionPane.YES_OPTION) {
+				pontuacao = 0;
+				new TelaCategorias(pontuacao);
+			} else {
+				new TelaInicial();
+			}
+			dispose();
+		} else if (palavraOculta.equals(palavraJogo)) {
+			JOptionPane.showMessageDialog(null, "Você Ganhou!");
+			pontuacao++;
+			new TelaCategorias(pontuacao);
+			dispose();
+		}
+
 	}
 
 	public void letrasAcertosErros(int cont, String letra) {
@@ -111,25 +194,28 @@ public class TelaJogo extends TelaPadrao {
 			letrasCertas += letra;
 		} else {
 			letrasErradas += letra;
+			tentativas--;
+			lbTentativas.setText(tentativas + "");
 		}
 		String lc = letrasCertas.length() + " - " + letrasCertas;
-		String le = letrasErradas.length() + " - "+ letrasErradas;
-		
+		String le = letrasErradas.length() + " - " + letrasErradas;
+
 		lbLetrasCertas.setText(lc);
 		lbLetrasErradas.setText(le);
-		
+
 	}
 
 	private class OuvinteDosBotoes implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
 			if (e.getActionCommand().equals("Sair")) {
-				new TelaCategorias();
+				new TelaCategorias(pontuacao);
 				dispose();
-			} else {
+			} else if (e.getActionCommand().equals("Trocar")) {
+				new TelaJogo(categotia, pontuacao);
+				dispose();
+			} else
 				atualizarPalavraOculta(e.getActionCommand());
-			}
-
 		}
 
 	}
@@ -334,13 +420,22 @@ public class TelaJogo extends TelaPadrao {
 	}
 
 	public void adicionarTitulo() {
-		JLabel lbTitulo = new JLabel(palavra.getNome());
-		lbTitulo.setBounds(800, 300, 200, 40);
-		lbTitulo.setFont(new Font("Georgia", Font.BOLD | Font.ITALIC, 20));
+
+		JLabel lbTitulo = new JLabel(categotia);
+		lbTitulo.setBounds(300, 60, 300, 50);
+		lbTitulo.setFont(new Font("Georgia", Font.BOLD | Font.ITALIC, 40));
 		// se for usar a cor branca no titulo
 		// lbTitulo.setForeground(Color.WHITE);
 		lbTitulo.setHorizontalAlignment(JLabel.CENTER);
 		add(lbTitulo);
+
+//		JLabel lbTeste = new JLabel(palavra.getNome());
+//		lbTeste.setBounds(800, 570, 200, 40);
+//		lbTeste.setFont(new Font("Georgia", Font.BOLD | Font.ITALIC, 20));
+//		// se for usar a cor branca no titulo
+//		// lbTitulo.setForeground(Color.WHITE);
+//		lbTeste.setHorizontalAlignment(JLabel.CENTER);
+//		add(lbTeste);
 	}
 
 	public void gerarPalavra() {

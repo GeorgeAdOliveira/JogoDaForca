@@ -1,6 +1,5 @@
 package View;
 
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,12 +13,25 @@ public class TelaCategorias extends TelaPadrao {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private int pontuacao;
 
-	public TelaCategorias() {
+	public TelaCategorias(int pontuacao) {
 		super("Categorias");
-		adicionarTitulo();
+		this.pontuacao = pontuacao;
 		adicionarBotoes();
+		adicionarTitulo();
 		setVisible(true);
+	}
+
+	public void adicionarTitulo() {
+
+		JLabel lbTitulo = new JLabel("Categorias");
+		lbTitulo.setBounds(360, 60, 300, 50);
+		lbTitulo.setFont(new Font("Georgia", Font.BOLD | Font.ITALIC, 40));
+		// se for usar a cor branca no titulo
+		// lbTitulo.setForeground(Color.WHITE);
+		lbTitulo.setHorizontalAlignment(JLabel.CENTER);
+		add(lbTitulo);
 	}
 
 	private class OuvinteDosBotoes implements ActionListener {
@@ -29,22 +41,12 @@ public class TelaCategorias extends TelaPadrao {
 				new TelaInicial();
 				dispose();
 			} else {
-				new TelaJogo(e.getActionCommand());
+				new TelaJogo(e.getActionCommand(), pontuacao);
 				dispose();
 			}
 
 		}
 
-	}
-
-	public void adicionarTitulo() {
-		JLabel lbTitulo = new JLabel("Categorias");
-		lbTitulo.setBounds(370, 60, 300, 50);
-		lbTitulo.setFont(new Font("Georgia", Font.BOLD | Font.ITALIC, 40));
-		// se for usar a cor branca no titulo
-		// lbTitulo.setForeground(Color.WHITE);
-		lbTitulo.setHorizontalAlignment(JLabel.CENTER);
-		add(lbTitulo);
 	}
 
 	private void adicionarBotoes() {

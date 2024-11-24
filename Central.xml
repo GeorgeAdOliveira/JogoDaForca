@@ -1,142 +1,856 @@
 <DAO.BancoDeDados>
-  <palavras>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>ELEFANTE</nome>
-      <dica>Maior animal terrestre</dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>GIRAFA</nome>
-      <dica>Animal com o pescoço mais longo</dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>COBRA</nome>
-      <dica>Animal que se move rastejando</dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>CACHORRO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>GATO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>TARTARUGA</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>PINGUIM</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>GOLFINHO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>CAMELO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>CAVALO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>PATO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>TIGRE</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>RINOCERONTE</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>ORNOTORRINCO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>COELHO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>BALEIA</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>PAPAGAIO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>LOBO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>ZEBRA</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>MACACO</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>RAPOZA</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>ANIMAL</categoria>
-      <nome>CORUJA</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-    <Model.PalavraModel>
-      <categoria>PAÍS</categoria>
-      <nome>BRASIL</nome>
-      <dica></dica>
-      <central/>
-    </Model.PalavraModel>
-  </palavras>
+	<palavras>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>ELEFANTE</nome>
+			<dica>Maior animal terrestre</dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>GIRAFA</nome>
+			<dica>Animal com o pescoço mais longo</dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>COBRA</nome>
+			<dica>Animal que se move rastejando</dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>CACHORRO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>GATO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>TARTARUGA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>PINGUIM</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>GOLFINHO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>CAMELO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>CAVALO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>PATO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>TIGRE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>RINOCERONTE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>ORNOTORRINCO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>COELHO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>BALEIA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>PAPAGAIO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>LOBO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>ZEBRA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>MACACO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>RAPOZA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ANIMAL</categoria>
+			<nome>CORUJA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>BRASIL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>FRAÇA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>EGITO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>CHINA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>ESPANHA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>ARGENTINA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>ALEMANHA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>PORTUGAL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>CHILE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>TURQUIA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>NORUEGA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>INGLATERRA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PAÍS</categoria>
+			<nome>PERU</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>PROFESSOR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>ENGENHEIRO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>ARQUITETO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>BOMBEIRO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>POLICIAL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>ADVOGADO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>COZINHEIRO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>PILOTO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>ATOR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>ENFERMEIRO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>CANTOR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>DENTISTA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>CIENTISTA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>JORNALISTA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>AGRICULTOR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>VENDEDOR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>ASTRONAUTA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>BARBEIRO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>PROFISSÃO</categoria>
+			<nome>HISTORIADOR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>TITANIC</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>AVATAR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>MATRIX</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>VINGADORES</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>PSICOSE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>GADIADOR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>INTERESTELAR</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>ROCKY</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FILME</categoria>
+			<nome>RAMBO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>VERMELHO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>AZUL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>VERDE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>AMARELO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>ROXO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>LARANJA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>ROSA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>PRETO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>BRANCO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>MARROM</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>CINZA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>TURQUESA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>BEGE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>VINHO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>MAGENTA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>OLIVA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>CIANO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>DOURADO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>PRATA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>ANIL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COR</categoria>
+			<nome>OURO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>BANANA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>LARANJA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>UVA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>MANGA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>MELANCIA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>ABACAXI</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>COCO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>MORANGO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>ACEROLA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>KIWI</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>CAJU</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>CARAMBOLA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>GOIABA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>FRAMBOESA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>PITAYA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>JABUTICABA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>AMEIXA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>GRAVIOLA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>FRUTA</categoria>
+			<nome>FIGO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>FUTEBOL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>BASQUETE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>ATLETISMO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>BOXE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>GOLFE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>CICLISMO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>HANDEBOL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>BEISEBOL</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>SKATE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>SURF</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>ESGRIMA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>AUTOMOBILISMO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>HIPISMO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>ESCALADA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>ESPORTE</categoria>
+			<nome>BMX</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>PIZZA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>SUSHI</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>LASANHA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>CHURRASCO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>SOPA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>CEVICHE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>RISOTO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>TACOS</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>FEIJOADA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>COXINHA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>RATATOUILLE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>KEBAB</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>STROGONOFF</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>GUACAMOLE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>CUSCUZ</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>POLENTA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>EMPADA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>FONDUE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>SASHIMI</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>POLENTA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>BURRITO</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>ROCAMBOLE</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>MACARRONADA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+		<Model.PalavraModel>
+			<categoria>COMIDA</categoria>
+			<nome>PAMONHA</nome>
+			<dica></dica>
+			<central />
+		</Model.PalavraModel>
+	</palavras>
 </DAO.BancoDeDados>
